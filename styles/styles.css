@@ -24,8 +24,8 @@ body {
     background-image: url(../img/cyberfixed.webp);
     background-position: center;
     background-size: cover;
-    height: 10rem;
-    width: 10rem;
+    height: 7rem;
+    width: 7rem;
     position: fixed;
     z-index: 10;
     top: 24%;
@@ -157,3 +157,10 @@ body {
     color: white;
     font-weight: 600;
 }
+
+@media (min-width: 992px) { 
+    .CyberBox {
+        height: 10rem;
+        width: 10rem;
+    }
+ }
