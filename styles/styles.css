@@ -1,0 +1,159 @@
+* {
+    max-width: 100vw;
+}
+
+body {
+    color: white;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-toggler {
+    margin-left: 50px;
+}
+
+.navbar-collapse {
+    margin-top: 50px;
+    background-color: black;
+}
+
+.CyberBox {
+    background-image: url(../img/cyberfixed.webp);
+    background-position: center;
+    background-size: cover;
+    height: 10rem;
+    width: 10rem;
+    position: fixed;
+    z-index: 10;
+    top: 24%;
+    right: 0;
+    /* top-left | top-right | bottom-right | bottom-left */
+    padding: 30px;
+}
+
+.box h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 10px;
+}
+
+.supercard {
+    margin: 15px;
+    background-position: center;
+    background-size: cover;
+    transition: .2s;
+}
+
+.cardimg1 {
+    background-image: url(../img/carousel-1.webp);
+}
+
+.cardimg1:hover {
+    cursor: pointer;
+    background-image: url(../img/carousel-1-hover.webp);
+}
+
+.cardimg2 {
+    background-image: url(../img/carousel-2.webp);
+
+}
+
+.cardimg2:hover {
+    cursor: pointer;
+    background-image: url(../img/carousel-2-hover.webp);
+}
+
+
+.cardimg3 {
+    background-image: url(../img/carousel-3.webp);
+
+}
+
+.cardimg3:hover {
+    cursor: pointer;
+    background-image: url(../img/carousel-3-hover.webp);
+}
+
+
+.cardimg4 {
+    background-image: url(../img/carousel-4.webp);
+
+}
+
+.cardimg4:hover {
+    cursor: pointer;
+    background-image: url(../img/carousel-4-hover.webp);
+}
+
+
+.cardimg5 {
+    background-image: url(../img/carousel-5.webp);
+
+}
+
+.cardimg5:hover {
+    cursor: pointer;
+    background-image: url(../img/carousel-5-hover.webp);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    background-image: none;
+}
+
+
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: white;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: white;
+}
+
+.box-locales {
+    background-image: url('../img/locales.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.box-locales button {
+    position: absolute;
+    bottom: 10%;
+    left: 6%;
+    border-radius: 30px;
+    width: auto;
+    padding: 8px 20px;
+    border: 0;
+    background-color: rgb(253, 164, 179);
+    color: white;
+    font-weight: 600;
+}
