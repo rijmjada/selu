@@ -40,25 +40,27 @@ body {
     padding-left: 10%;
 }
 
-.box-ul ul li:hover{
+.box-ul ul li:hover {
     background-color: rgba(250, 249, 249, 0.396);
     font-weight: 550;
 }
 
 .nav-link {
     position: relative;
- 
+
 }
+
 .nav-link::after {
     content: ">";
     position: absolute;
     right: 5%;
-    font-size: 1.3rem; /* Ajusta el tamaño según tus preferencias */
+    font-size: 1.3rem;
+    /* Ajusta el tamaño según tus preferencias */
     top: 1%;
 }
 
 .box-navbar-change-color {
-    margin-top: -8px ;
+    margin-top: -8px;
     padding: 20px;
 }
 
@@ -69,7 +71,7 @@ body {
 
 
 .CyberBox {
-    background-image: url(../img/cyberfixed.webp);
+    background-image: url(../img/cyberweek-lg.webp);
     background-position: center;
     background-size: cover;
     height: 7rem;
@@ -81,6 +83,40 @@ body {
     /* top-left | top-right | bottom-right | bottom-left */
     padding: 30px;
 }
+
+.contactoFixed,
+.soporteFixed {
+    position: fixed;
+    bottom: 0;
+    margin: 15px 20px;
+    padding: 0.9em 1.5em;
+    opacity: 1;
+    border: 0px;
+    z-index: 999999;
+    font-size: 1rem;
+    color: black;
+    background-color: rgb(255, 244, 244);
+    border-radius: 35px;
+}
+
+.contactoFixed {
+    left: 5%;
+}
+
+.soporteFixed {
+    background-color: pink;
+    right: 5%;
+}
+
+#zendesk-fake-icon {
+    padding-right: 0.57143em;
+    fill: currentColor;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
 
 .box h4 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -211,6 +247,7 @@ body {
         height: 10rem;
         width: 10rem;
     }
+
     .box-icon-navbar {
         font-size: x-large;
     }
@@ -220,9 +257,23 @@ body {
 @media (max-width: 992px) {
 
     .box-navbar-change-color img {
-        max-height: 40px ;
+        max-height: 40px;
     }
 
+    .contactoFixed strong,
+    .soporteFixed strong {
+        display: none;
+    }
+
+    .contactoFixed ,
+    .soporteFixed  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .8rem;
+    }
+
+    
 }
 
 .cold-card {
@@ -245,5 +296,3 @@ body {
     justify-content: flex-start;
     gap: 8px;
 }
-
-
