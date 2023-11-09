@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    const navbar = document.querySelector('.navbar');
+    const navbar = document.querySelector('.box-navbar-change-color');
     const imgNavbar = document.querySelector('#logo-selu-navbar');
     const biPersonCircle = document.querySelector('#bi-person-circle');
     const biHandbag = document.querySelector('#bi-handbag');
