@@ -12,12 +12,29 @@ body {
 }
 
 .navbar-toggler {
-    margin-left: 50px;
+    margin-left: 1rem;
 }
 
 .navbar-collapse {
     margin-top: 50px;
     background-color: black;
+}
+
+.inverted-image {
+    filter: invert(100%) !important;
+}
+
+.navbar-toggler {
+    all: unset !important;
+    cursor: pointer !important;
+    font-size: x-large !important;
+    background-color: transparent;
+    
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%) !important;
+    background-color: transparent;
 }
 
 .CyberBox {
@@ -43,7 +60,7 @@ body {
     margin: 15px;
     background-position: center;
     background-size: cover;
-    transition: .2s;
+    transition: .3s;
 }
 
 .cardimg1 {
@@ -158,9 +175,30 @@ body {
     font-weight: 600;
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     .CyberBox {
         height: 10rem;
         width: 10rem;
     }
- }
+}
+
+.cold-card {
+    position: relative;
+}
+
+.bi-bag-heart {
+    font-size: xx-large;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.box-colors {
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+}
