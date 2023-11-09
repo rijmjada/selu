@@ -27,7 +27,6 @@ body {
     all: unset !important;
     cursor: pointer !important;
     font-size: x-large !important;
-    
 }
 
 .navbar-toggler-icon {
@@ -62,6 +61,12 @@ body {
     margin-top: -8px ;
     padding: 20px;
 }
+
+.box-icon-navbar {
+    font-size: medium;
+}
+
+
 
 .CyberBox {
     background-image: url(../img/cyberfixed.webp);
@@ -206,6 +211,18 @@ body {
         height: 10rem;
         width: 10rem;
     }
+    .box-icon-navbar {
+        font-size: x-large;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .box-navbar-change-color img {
+        max-height: 50px ;
+    }
+
 }
 
 .cold-card {
