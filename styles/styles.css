@@ -288,4 +288,6 @@ body {
 }
 
 
-
+.inverted-image {
+    filter: invert(100%) !important;
+}
