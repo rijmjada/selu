@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     max-width: 100vw;
 }
@@ -7,26 +8,20 @@ body {
     overflow-x: hidden;
 }
 
+/* Estilos de la barra de navegación */
 .navbar {
     background-color: transparent;
 }
 
 .navbar-toggler {
     margin-left: 1rem;
+    all: unset !important;
+    cursor: pointer !important;
+    font-size: x-large !important;
 }
 
 .navbar-collapse {
     background-color: rgba(255, 255, 255, 0.8);
-}
-
-.inverted-image {
-    filter: invert(100%) !important;
-}
-
-.navbar-toggler {
-    all: unset !important;
-    cursor: pointer !important;
-    font-size: x-large !important;
 }
 
 .navbar-toggler-icon {
@@ -34,6 +29,7 @@ body {
     background-color: transparent;
 }
 
+/* Estilos de la lista de navegación */
 .box-ul ul li {
     font-size: medium;
     font-weight: 450;
@@ -45,9 +41,9 @@ body {
     font-weight: 550;
 }
 
+/* Estilos de los enlaces de navegación */
 .nav-link {
     position: relative;
-
 }
 
 .nav-link::after {
@@ -55,21 +51,21 @@ body {
     position: absolute;
     right: 5%;
     font-size: 1.3rem;
-    /* Ajusta el tamaño según tus preferencias */
     top: 1%;
 }
 
+/* Estilos del contenedor de la barra de navegación */
 .box-navbar-change-color {
     margin-top: -8px;
     padding: 20px;
 }
 
+/* Estilos del contenedor de iconos de la barra de navegación */
 .box-icon-navbar {
     font-size: medium;
 }
 
-
-
+/* Estilos de la caja CyberBox */
 .CyberBox {
     background-image: url(../img/cyberweek-lg.webp);
     background-position: center;
@@ -80,10 +76,10 @@ body {
     z-index: 9999 !important;
     top: 24%;
     right: 0;
-    /* top-left | top-right | bottom-right | bottom-left */
     padding: 30px;
 }
 
+/* Estilos de los botones de contacto y soporte */
 .contactoFixed,
 .soporteFixed {
     position: fixed;
@@ -95,12 +91,12 @@ body {
     z-index: 999999;
     font-size: 1rem;
     color: black;
-    background-color: rgb(255, 244, 244);
     border-radius: 35px;
 }
 
 .contactoFixed {
     left: 5%;
+    background-color: white;
 }
 
 .soporteFixed {
@@ -108,6 +104,7 @@ body {
     right: 5%;
 }
 
+/* Estilos del ícono Zendesk */
 #zendesk-fake-icon {
     padding-right: 0.57143em;
     fill: currentColor;
@@ -115,14 +112,13 @@ body {
     height: 2rem;
 }
 
-
-
-
+/* Estilos del título h4 en la caja */
 .box h4 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-left: 10px;
 }
 
+/* Estilos de las tarjetas */
 .supercard {
     margin: 15px;
     background-position: center;
@@ -130,66 +126,59 @@ body {
     transition: .3s;
 }
 
+.supercard:hover {
+    cursor: pointer;
+}
+
+/* Estilos de las imágenes de las tarjetas */
+.cardimg1,
+.cardimg2,
+.cardimg3,
+.cardimg4,
+.cardimg5 {
+    background-size: cover;
+}
+
+/* Estilos de las imágenes de las tarjetas en hover */
+.cardimg1:hover,
+.cardimg2:hover,
+.cardimg3:hover,
+.cardimg4:hover,
+.cardimg5:hover {
+    cursor: pointer;
+}
+
 .cardimg1 {
     background-image: url(../img/carousel-1.webp);
 }
 
-.cardimg1:hover {
-    cursor: pointer;
-    background-image: url(../img/carousel-1-hover.webp);
-}
-
 .cardimg2 {
     background-image: url(../img/carousel-2.webp);
-
 }
-
-.cardimg2:hover {
-    cursor: pointer;
-    background-image: url(../img/carousel-2-hover.webp);
-}
-
 
 .cardimg3 {
     background-image: url(../img/carousel-3.webp);
-
 }
-
-.cardimg3:hover {
-    cursor: pointer;
-    background-image: url(../img/carousel-3-hover.webp);
-}
-
 
 .cardimg4 {
     background-image: url(../img/carousel-4.webp);
 
 }
 
-.cardimg4:hover {
-    cursor: pointer;
-    background-image: url(../img/carousel-4-hover.webp);
-}
-
-
 .cardimg5 {
     background-image: url(../img/carousel-5.webp);
-
 }
 
-.cardimg5:hover {
-    cursor: pointer;
-    background-image: url(../img/carousel-5-hover.webp);
-}
 
+/* Estilos del contenedor de videos */
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    /* Proporción 16:9 */
     height: 0;
     overflow: hidden;
 }
 
+/* Estilos del iframe dentro del contenedor de videos */
 .video-container iframe {
     position: absolute;
     top: 0;
@@ -198,7 +187,7 @@ body {
     height: 100%;
 }
 
-
+/* Estilos de los controles del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     height: 100px;
@@ -208,20 +197,21 @@ body {
     background-image: none;
 }
 
-
-
+/* Estilos del ícono de siguiente en el carrusel */
 .carousel-control-next-icon:after {
     content: '>';
     font-size: 55px;
     color: white;
 }
 
+/* Estilos del ícono de anterior en el carrusel */
 .carousel-control-prev-icon:after {
     content: '<';
     font-size: 55px;
     color: white;
 }
 
+/* Estilos de la caja de locales */
 .box-locales {
     background-image: url('../img/locales.webp');
     background-size: cover;
@@ -229,6 +219,7 @@ body {
     position: relative;
 }
 
+/* Estilos del botón dentro de la caja de locales */
 .box-locales button {
     position: absolute;
     bottom: 10%;
@@ -242,6 +233,7 @@ body {
     font-weight: 600;
 }
 
+/* Media queries para pantallas más grandes */
 @media (min-width: 992px) {
     .CyberBox {
         height: 10rem;
@@ -251,11 +243,10 @@ body {
     .box-icon-navbar {
         font-size: x-large;
     }
-
 }
 
+/* Media queries para pantallas más pequeñas */
 @media (max-width: 992px) {
-
     .box-navbar-change-color img {
         max-height: 40px;
     }
@@ -265,17 +256,16 @@ body {
         display: none;
     }
 
-    .contactoFixed ,
-    .soporteFixed  {
+    .contactoFixed,
+    .soporteFixed {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: .8rem;
     }
-
-    
 }
 
+/* Estilos adicionales para tarjetas frías */
 .cold-card {
     position: relative;
 }
@@ -296,3 +286,6 @@ body {
     justify-content: flex-start;
     gap: 8px;
 }
+
+
+
